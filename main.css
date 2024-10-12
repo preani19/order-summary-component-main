@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color:  hsl(225, 100%, 94%) ;
+    font-size : 16px;
+}
+svg {
+    max-width: 100%;
+}
+@media (min-width:375px){
+    .background svg:last-of-type{
+        display: none;
+    }
+}
+@media (max-width:375px) {
+    .background svg:first-of-type{
+        display: none;
+    }
+    .background svg:last-of-type {
+        display: block;
+    }
+}
+/* start contaent */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    box-shadow: 0px 5px 20px hsla(223, 47%, 23%, 0.088);
+}
+@media (max-width:375px) {
+    .content {
+        width: 350px;
+    }
+}
+.content .img svg {
+    border-top-left-radius: 20px ;
+    border-top-right-radius:20px ;
+    margin-bottom: 10px;
+}
+.content h2 {
+    margin: 20px;
+    font-weight: bold;
+}
+.content p {
+    line-height: 1.6;
+    padding: 0 80px;
+    font-weight: 400;
+    margin: 20px 0 30px 0;
+    color: hsl(224, 23%, 55%);
+}
+.content .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+    margin-bottom: 50px;
+}
+.content .price .music {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.content .price  a{
+    font-weight: 800;
+}
+.content .price .music div {
+    display: flex;
+    flex-direction: column;
+}
+.content .price .music div p {
+    padding: 0;
+    margin: 0;
+}
+.content .link {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    background-color:hsl(245, 75%, 52%);
+    width: 75%;
+    border-radius: 10px;
+    font-size: 14px;
+    position: relative;
+    left: 13%;
+    font-weight: 800;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 20px hsla(223, 47%, 23%, 0.088);
+}
+.content .link-cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 15px;
+} 
+/* end contaent */
+/* start attribution */
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end attribution */
